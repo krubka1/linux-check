@@ -70,8 +70,9 @@ Check that GitHub built it from this repo (needs the [GitHub CLI](https://cli.gi
 gh attestation verify Linux-Check-amd64.exe --repo OWNER/linux-check
 ```
 
-Or rebuild it: the build is reproducible, so the same Go version gives a
-byte-identical file.
+Or rebuild it yourself and compare hashes. The build is deterministic: with
+the official Go release pinned in `go.mod` it should give the same bytes as
+the release (Linux distro builds of Go may carry patches that change the output).
 
 ```sh
 sh build.sh        # needs Go; prints SHA-256 of dist/*.exe
