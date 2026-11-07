@@ -1,0 +1,22 @@
+[
+  {"id":"14e4:43b1","status":"WARN","name":"Broadcom BCM4352 Wi-Fi","note":"Needs proprietary broadcom-wl driver; no Wi-Fi during install."},
+  {"id":"14e4:43a0","status":"WARN","name":"Broadcom BCM4360 Wi-Fi","note":"Needs proprietary broadcom-wl driver; no Wi-Fi during install."},
+  {"id":"14e4:*","status":"WARN","name":"Broadcom device","note":"Broadcom Wi-Fi is frequently proprietary-driver only. Have Ethernet or USB tethering ready."},
+  {"id":"10ec:c821","status":"WARN","name":"Realtek RTL8821CE Wi-Fi","note":"Known flaky; often needs an out-of-tree driver (rtl8821ce) from DKMS."},
+  {"id":"10ec:8852","status":"WARN","name":"Realtek RTL8852 Wi-Fi","note":"Works on kernel 6.2+ (rtw89). Older distros will not see it."},
+  {"id":"10ec:b852","status":"WARN","name":"Realtek RTL8852BE Wi-Fi","note":"Works on kernel 6.2+ (rtw89). Older distros will not see it."},
+  {"id":"10ec:*","status":"INFO","name":"Realtek device","note":"Ethernet/audio are fine. Wi-Fi varies by model, check the report ID."},
+  {"id":"8086:*","status":"OK","name":"Intel device","note":"Intel has in-kernel drivers for nearly all its chips."},
+  {"id":"14c3:7961","status":"OK","name":"MediaTek MT7921 Wi-Fi","note":"In-kernel mt7921e driver, works well."},
+  {"id":"14c3:*","status":"OK","name":"MediaTek device","note":"Generally in-kernel on recent kernels."},
+  {"id":"168c:*","status":"OK","name":"Qualcomm Atheros device","note":"In-kernel ath drivers."},
+  {"id":"17cb:*","status":"OK","name":"Qualcomm device","note":"In-kernel ath11k/ath12k on recent kernels."},
+  {"id":"1002:*","status":"OK","name":"AMD GPU/device","note":"Open-source amdgpu driver, works out of the box."},
+  {"id":"10de:*","status":"WARN","name":"NVIDIA GPU","note":"Works with proprietary driver; install it after setup. Hybrid laptops need PRIME setup."},
+  {"id":"27c6:*","status":"WARN","name":"Goodix fingerprint reader","note":"Most Goodix readers have no or partial libfprint support."},
+  {"id":"06cb:*","status":"WARN","name":"Synaptics fingerprint reader","note":"Some models supported by libfprint, many are not."},
+  {"id":"04f3:*","status":"WARN","name":"Elan device","note":"Elan touchpads work; Elan fingerprint readers are hit-or-miss."},
+  {"id":"8086:9a0b","status":"WARN","name":"Intel VMD controller","note":"Switch storage mode from RAID/RST to AHCI in BIOS, or the installer will not see the SSD."},
+  {"id":"8086:467f","status":"WARN","name":"Intel VMD controller","note":"Switch storage mode from RAID/RST to AHCI in BIOS, or the installer will not see the SSD."},
+  {"id":"8086:a77f","status":"WARN","name":"Intel VMD controller","note":"Switch storage mode from RAID/RST to AHCI in BIOS, or the installer will not see the SSD."}
+]
