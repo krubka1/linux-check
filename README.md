@@ -67,7 +67,7 @@ It must match the line in `SHA256SUMS.txt` from the same release.
 Check that GitHub built it from this repo (needs the [GitHub CLI](https://cli.github.com)):
 
 ```sh
-gh attestation verify Linux-Check-amd64.exe --repo OWNER/linux-check
+gh attestation verify Linux-Check-amd64.exe --repo krubka1/linux-check
 ```
 
 Or rebuild it yourself and compare hashes. The build is deterministic: with
